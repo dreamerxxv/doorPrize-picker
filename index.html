@@ -6,10 +6,6 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -192,3 +188,151 @@
     } 
 }).mount('#app')
 </script>
+
+<style>
+  body {
+  margin: 0;
+  height: 100vh;
+  background-image: url("../assets/background.gif");
+  background-size: cover;
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  background-position: center;
+}
+
+.container {
+  min-height: 300px;
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  align-items: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.nav{
+    border: #232a97 4px solid;
+}
+
+
+h3 {
+    font-family: "Pacifico", cursive;
+    color: #8c65e2;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+h1 {
+  font-family: "Pacifico", cursive;
+  color: #db3eb1;
+  text-align: center;
+  line-height: normal;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.input_container {
+  display: flex;
+}
+
+input:focus {
+  outline: #8c65e2 2px solid;
+}
+
+input {
+  flex-grow: 1;
+  border: 2px solid #dddddd;
+  background: #f2f2f2;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.button {
+  background: #8c65e2;
+  font-family: "Pacifico", cursive;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.btn_container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_check {
+  background: white;
+  font-family: "Pacifico", cursive;
+  border: #db3eb1 2px solid;
+  color: #db3eb1;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn_check:hover {
+  background: #db3eb1;
+  color: white;
+}
+
+.action_btn {
+  background: rgb(255, 123, 0);
+  font-family: "Pacifico", cursive;
+  border: rgb(255, 123, 0) 2px solid;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.action_btn:hover {
+  background: white;
+  color: rgb(255, 123, 0);
+}
+
+.show_error p {
+  color: rgb(255, 123, 0);
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+}
+
+.show_names {
+  display: flex;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.names {
+  font-family: "Pacifico", cursive;
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 3px;
+  padding: 5px;
+  background:#FEC737;
+  border-radius: 10px;
+}
+
+.result_value {
+  font-family: "Pacifico", cursive;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  padding: 5px;
+  background: black;
+  border-radius: 5px;
+}
+
+</style>
